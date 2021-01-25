@@ -7,9 +7,18 @@ body {
 
 h1 {
   font-style: italic;
-  color: purple;
+  color: purple;}
+h2 {
+  position: relative;
+  display: inline-block;
 }
-h2{text-decoration : line-through;
-  
-  
+h2:after {
+  content: " ";
+  display: inline-block;
+  background-color: rgba(255, 0, 0, .25);
+  position: absolute;
+  top: .5em;
+  left: -.125em;
+  right: -.125em;
+  height: .3em;
 }
